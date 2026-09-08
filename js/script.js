@@ -9,7 +9,7 @@ for (i = 0; i < 16; i++) {
   
   for(j = 0; j < 16; j++) {
     const row = document.createElement("div");
-    row.setAttribute("id", `div${i}x${j}`);
+    row.setAttribute("id", `cell${i}x${j}`);
     row.classList.toggle("row");
     column.appendChild(row);
   }
