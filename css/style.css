@@ -13,3 +13,34 @@ html {
     padding: 0;
 }
 
+body,
+.container,
+.column {
+    display: flex;
+}
+
+body {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vh;
+    height: 100vh;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column,
+.row {
+    flex: 1;
+}
+
+.container,
+.row {
+    border: 1px, solid;
+}
