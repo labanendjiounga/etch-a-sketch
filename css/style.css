@@ -29,10 +29,12 @@ body {
 .container {
     width: 100vh;
     height: 100vh;
+    gap: 1px;
 }
 
 .column {
     flex-direction: column;
+    gap: 1px;
 }
 
 .column,
@@ -40,7 +42,6 @@ body {
     flex: 1;
 }
 
-.container,
 .row {
     border: 1px, solid;
 }
