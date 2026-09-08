@@ -14,3 +14,16 @@ for (i = 0; i < 16; i++) {
     column.appendChild(row);
   }
 }
+
+const cells = document.querySelectorAll("div");
+cells.forEach((cell) => {
+    if (cell.id) {
+        cell.addEventListener("mouseenter", () => {
+            cell.classList.add("class", "mouseenter");
+        });
+
+        cell.addEventListener("mouseleave", () => {
+            cell.classList.add("class", "mouseleave");
+        });
+    }
+});
