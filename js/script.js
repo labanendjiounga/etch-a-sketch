@@ -14,13 +14,13 @@ container.addEventListener("mouseout", e => {
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
     let userInput = "";
+    
     do {
-        userInput = prompt("Enter a whole positive number between 2 and 100");
-    } while(userInput == "" || userInput == "0" || Number(userInput) < 2 ||
+        userInput = prompt("Enter a whole positive number between 1 and 100");
+    } while(userInput == "" || userInput == "0" || Number(userInput) < 0 ||
             Number(userInput) > 100 || !Number.isInteger(Number(userInput)));
     
     if(userInput) {
-        console.log(userInput);
         while(container.firstChild) {
             container.removeChild(container.firstChild);
         }

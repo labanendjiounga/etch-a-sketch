@@ -48,6 +48,11 @@ body {
 button {
     margin-bottom: 8px;
     padding: 2px 12px;
-    border: 2px solid;
-    border-radius: 12px;
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+.footer {
+    padding: 12px;
+
 }
