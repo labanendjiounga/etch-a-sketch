@@ -13,6 +13,10 @@ html {
     padding: 0;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
 body,
 .container,
 .column {
@@ -24,11 +28,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fefee2;
 }
 
 .container {
     width: 100vh;
     height: 100vh;
+    background-color: #fefee2;
 }
 
 .column {
@@ -42,14 +48,11 @@ body {
 
 .container,
 .row {
-    border: 1px, solid;
+    border: 1px, solid black;
 }
 
 button {
-    margin-bottom: 8px;
-    padding: 2px 12px;
-    border: 1px solid;
-    border-radius: 16px;
+    margin: 8px;
 }
 
 .footer {
