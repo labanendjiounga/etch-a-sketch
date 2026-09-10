@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -6,35 +10,28 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-}
-
-* {
     margin: 0;
     padding: 0;
 }
 
-:root {
-  color-scheme: light dark;
-}
-
 body,
-.container,
+#grid,
 .column {
     display: flex;
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fefee2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-    width: 100vh;
-    height: 100vh;
-    background-color: #fefee2;
+#grid {
+    width: 545px;
+    height: 545px;
+    background-color: white;
 }
 
 .column {
@@ -46,13 +43,12 @@ body {
     flex: 1;
 }
 
-.container,
-.row {
-    border: 1px, solid black;
-}
-
 button {
-    margin: 8px;
+    margin-bottom: 8px;
+    padding: 2px 8px;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 4px;
 }
 
 .footer {
