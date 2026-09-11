@@ -15,6 +15,7 @@ html {
 }
 
 body,
+.settings,
 #grid,
 .column {
     display: flex;
@@ -23,14 +24,14 @@ body,
 body {
     min-height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #grid {
-    width: 545px;
-    height: 545px;
+    width: 500px;
+    height: 500px;
     background-color: white;
 }
 
@@ -43,8 +44,14 @@ body {
     flex: 1;
 }
 
+.settings {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 8px;
+}
+
 button {
-    margin-bottom: 8px;
     padding: 2px 8px;
     font-weight: 700;
     border: 1px solid white;
