@@ -24,14 +24,14 @@ body,
 body {
     min-height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #grid {
-    width: 500px;
-    height: 500px;
+    width: 510px;
+    height: 510px;
     background-color: white;
 }
 
@@ -45,10 +45,10 @@ body {
 }
 
 .settings {
-    flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     gap: 8px;
+    padding: 8px 0;
 }
 
 button {
@@ -56,9 +56,9 @@ button {
     font-weight: 700;
     border: 1px solid white;
     border-radius: 4px;
-    margin-bottom: 8px;
 }
 
+h1,
 .footer {
-    padding: 12px;
+    padding: 12px 0;
 }

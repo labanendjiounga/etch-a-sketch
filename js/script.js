@@ -11,7 +11,6 @@ const grid = document.querySelector("#grid");
 const button = document.querySelector("button");
 
 grid.addEventListener("mouseover", changeBackground);
-grid.addEventListener("mouseout", changeBackground);
 button.addEventListener("click", () => {
     const userInput = getUserInput()
     
